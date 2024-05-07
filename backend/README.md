@@ -47,7 +47,7 @@ python train.py
 
 This script will automatically load data from data/, train the KAN-Former model, and save the trained model to models/.
 
-## ** Deployment
+## Deployment
 # AWS Deployment with Terraform
 1. initialize Terraform:
 cd infrastructure/aws
@@ -56,7 +56,7 @@ terraform init
 2. Apply Terraform configuration:
 terraform apply
 
-## ** Alternative Deployments
+## Alternative Deployments
 # Azure
 Deploy using Azure Kubernetes Service (AKS) for container orchestration, leveraging Azure Blob Storage for data storage:
 
@@ -71,12 +71,12 @@ cd infrastructure/gcp
 terraform init
 terraform apply
 
-## ** Microservices Architecture and Cloud-Specific Configurations
+## Microservices Architecture and Cloud-Specific Configurations
 # AWS: Utilizes EKS for managing Kubernetes clusters, S3 for data storage, and SageMaker for model training and deployment.
 # Azure: Leverages AKS for Kubernetes services, Blob Storage for data, and Azure Machine Learning for managing the ML lifecycle.
 # GCP: Employs GKE for Kubernetes deployment, Cloud Storage for data management, and AI Platform for model training and deployment.
 
-## ** Model Explanation
+## Model Explanation
 The KAN-Former adapts the transformer architecture specifically for time series data, making it highly effective for anomaly detection in financial markets. This model:
 
 Incorporates specialized positional encodings and a custom attention mechanism.
@@ -98,5 +98,5 @@ Improved Temporal Dynamics Understanding: The RoPE ensures that the model does n
 Scalability and Flexibility: The architecture allows for scalability, a crucial feature when dealing with vast amounts of financial data. The model can be adjusted easily for different amounts of data or computational resources without significant reconfiguration.
 Robustness to Sequence Length Variations: Traditional transformers often struggle with varying sequence lengths, primarily due to their fixed positional encoding. RoPE’s dynamic nature allows the KAN-Former to handle different sequence lengths more effectively, maintaining performance across varied datasets.
 
-## ** Conclusion
+## Conclusion
 The KAN-Former project showcases a state-of-the-art approach to anomaly detection in financial markets. With its robust architecture and cloud-native deployment options, it is positioned to offer significant advancements in financial analytics.
