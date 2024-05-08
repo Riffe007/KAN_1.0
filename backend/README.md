@@ -23,7 +23,7 @@ The KAN-Former is an innovative machine learning model tailored for anomaly dete
 
 ## Prerequisites
 - Docker installed and running
-- Python 3.11.2
+- Python 3.10
 - AWS CLI, Azure CLI, and Google Cloud SDK configured with your account
 - Terraform v0.14+
 
